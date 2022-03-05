@@ -1,8 +1,8 @@
 import { h, createApp } from "vue";
 import singleSpaVue from "single-spa-vue";
 
+import router from './router';
 import App from "./App.vue";
-import router from "./router";
 
 const vueLifecycles = singleSpaVue({
   createApp,
