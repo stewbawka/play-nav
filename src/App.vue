@@ -14,6 +14,5 @@ export default defineComponent({
 });
 </script>
 <template>
-  <p>asdf</p>
   <Nav />
 </template>
