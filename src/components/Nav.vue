@@ -23,7 +23,7 @@ export default defineComponent({
     const { session, setSession } = useStore();
     // TODO: make ts happy
     // @ts-ignore
-    auth.emitter.on('sessionUpdated', e => {
+    auth.emitter.on('authStateUpdated', e => {
       if (setSession) {
         setSession(e.token, e.user);
       }
