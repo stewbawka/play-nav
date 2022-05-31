@@ -43,10 +43,10 @@ export default defineComponent({
           <nav tabindex="0" class="border border-2 bg-white border-gray-800 rounded w-60 absolute left-0 top-full transition-all" v-bind:class="userMenuClasses">
             <ul class="py-1">
               <li class="mr-6">
-                <router-link to="/me" class="block px-4 py-2 hover:bg-gray-100">Settings</router-link>
+                <router-link to="/me" v-on:click="toggleUserMenuOpen" class="block px-4 py-2 hover:bg-gray-100">Settings</router-link>
               </li>
               <li class="mr-6">
-                <router-link to="/logout" class="block px-4 py-2 hover:bg-gray-100">Logout</router-link>
+                <router-link to="/logout" v-on:click="toggleUserMenuOpen" class="block px-4 py-2 hover:bg-gray-100">Logout</router-link>
               </li>
             </ul>
           </nav>
